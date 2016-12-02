@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV VERSION 0.6.0
+ENV VERSION 0.6.1
 
 RUN apk add --update ruby ruby-dev ruby-bigdecimal sqlite sqlite-dev build-base libstdc++ ca-certificates && \
     gem install mailcatcher -v $VERSION --no-ri --no-rdoc && \
