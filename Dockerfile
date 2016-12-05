@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV VERSION 0.6.2
+ENV VERSION 0.6.3
 
 RUN apk add --update ruby ruby-dev ruby-bigdecimal sqlite sqlite-dev build-base libstdc++ ca-certificates && \
     gem install json --no-ri --no-rdoc && \
