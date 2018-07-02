@@ -1,8 +1,8 @@
 FROM alpine:latest
 
 ENV VERSION 0.6.5
-ENV HTTP_PORT 1080
-ENV SMTP_PORT 1025
+ENV HTTP_PORT 80
+ENV SMTP_PORT 25
 
 RUN apk add --update ruby ruby-dev ruby-bigdecimal sqlite sqlite-dev build-base libstdc++ ca-certificates && \
     gem install json --no-ri --no-rdoc && \
