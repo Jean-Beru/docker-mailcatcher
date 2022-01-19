@@ -11,4 +11,4 @@ RUN apk add --update ruby ruby-dev ruby-etc ruby-bigdecimal sqlite sqlite-dev bu
 EXPOSE 1025 1080
 
 ENTRYPOINT ["mailcatcher", "--foreground"]
-CMD ["--ip", "0.0.0.0"]
+CMD ["--ip", "0.0.0.0", "--no-quit"]
