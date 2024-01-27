@@ -3,6 +3,11 @@ name: 'Continuous Integration'
 on:
   tags:
     - '*.*.*'
+  #>>> TEST TO REMOVE
+  push:
+    branches:
+      - 'feat/add-automatic-build'
+  #<<< TEST TO REMOVE
 
 jobs:
   push:
@@ -25,5 +30,6 @@ jobs:
         uses: 'docker/build-push-action@v5'
         with:
           pull: false
-          push: true
+          #push: true
+          push: false
           tags: 'jeanberu/mailcatcher:${{ github.ref_name }}'
