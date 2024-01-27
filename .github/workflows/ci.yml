@@ -1,13 +1,9 @@
 name: 'Continuous Integration'
 
 on:
-  tags:
-    - '*.*.*'
-  #>>> TEST TO REMOVE
   push:
-    branches:
-      - 'feat/add-automatic-build'
-  #<<< TEST TO REMOVE
+    tags:
+      - '*.*.*'
 
 jobs:
   push:
@@ -21,7 +17,6 @@ jobs:
       - name: 'Log in to the Container registry'
         uses: 'docker/login-action@v3'
         with:
-          registry: '${{ secrets.REGISTRY_HOST }}'
           username: '${{ secrets.REGISTRY_USERNAME }}'
           password: '${{ secrets.REGISTRY_PASSWORD }}'
       - name: 'Set up Docker Buildx'
@@ -30,6 +25,5 @@ jobs:
         uses: 'docker/build-push-action@v5'
         with:
           pull: false
-          #push: true
-          push: false
+          push: true
           tags: 'jeanberu/mailcatcher:${{ github.ref_name }}'
