@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ARG VERSION=0.8.1
+ARG VERSION=0.8.2
 
 RUN apk add --update ruby ruby-dev ruby-etc ruby-bigdecimal sqlite sqlite-dev build-base libstdc++ ca-certificates && \
     gem install json --no-document && \
