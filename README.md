@@ -12,6 +12,6 @@ To change options, replace Docker image default command. You can see option list
 [here](https://github.com/sj26/mailcatcher#command-line-options).
 
 Example: `docker run -d --expose 80 -p 80:80 -p 1025:1025 --name mailcatcher jeanberu/mailcatcher --ip=0.0.0.0 
---http-port=80`
+--http-port=80 --no-quit`
 
-Docker image's default options are: `--ip=0.0.0.0`.
+Docker image's default options are: `--ip=0.0.0.0` and `--no-quit`.
