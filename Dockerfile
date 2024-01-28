@@ -1,9 +1,9 @@
 FROM alpine:latest
 
-ARG VERSION=0.8.0
+ARG VERSION=0.8.1
 
 RUN apk add --update ruby ruby-dev ruby-etc ruby-bigdecimal sqlite sqlite-dev build-base libstdc++ ca-certificates && \
-    gem install json --no-document  && \
+    gem install json --no-document && \
     gem install mailcatcher -v $VERSION --no-document && \
     apk del --purge ruby-dev build-base && \
     rm -rf /var/cache/apk/*
