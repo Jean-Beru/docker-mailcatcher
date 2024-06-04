@@ -1,0 +1,40 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    diff-lcs (1.5.1)
+    net-http (0.4.1)
+      uri
+    net-protocol (0.2.2)
+      timeout
+    net-smtp (0.5.0)
+      net-protocol
+    rspec (3.13.0)
+      rspec-core (~> 3.13.0)
+      rspec-expectations (~> 3.13.0)
+      rspec-mocks (~> 3.13.0)
+    rspec-core (3.13.0)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-support (3.13.1)
+    timeout (0.4.1)
+    uri (0.13.0)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  net-http (>= 0.4)
+  net-smtp (>= 0.5)
+  rspec (>= 3.13)
+
+RUBY VERSION
+   ruby 3.3.2p78
+
+BUNDLED WITH
+   2.5.9

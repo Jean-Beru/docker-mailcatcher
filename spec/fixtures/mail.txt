@@ -1,0 +1,5 @@
+Subject: test message
+Date: Sat, 23 Jun 2001 16:26:43 +0900
+Message-Id: <unique.message.id.string@example.com>
+
+This is a test message.
