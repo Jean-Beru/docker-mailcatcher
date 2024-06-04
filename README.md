@@ -2,7 +2,7 @@
 
 [![Latest Version](https://img.shields.io/github/release/Jean-Beru/docker-mailcatcher.svg?style=flat-square)](https://github.com/Jean-Beru/docker-mailcatcher/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENCE)
-[![Tests](https://github.com/Jean-Beru/docker-mailcatcher/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/Jean-Beru/docker-mailcatcher/actions/workflows/ci.yml?query=branch%3Amaster)
+[![Tests](https://github.com/Jean-Beru/docker-mailcatcher/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Jean-Beru/docker-mailcatcher/actions/workflows/ci.yml?query=branch%3Amain)
 
 
 [Mailcatcher](http://mailcatcher.me) catches mail and serves it through a dream.
